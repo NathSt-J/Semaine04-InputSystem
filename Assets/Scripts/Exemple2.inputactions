@@ -1,0 +1,34 @@
+{
+    "name": "Exemple2",
+    "maps": [
+        {
+            "name": "Exemple2",
+            "id": "2a2d0603-0dec-427f-a079-c7003e09f586",
+            "actions": [
+                {
+                    "name": "DesactiverObjet",
+                    "type": "Button",
+                    "id": "6e734192-6df1-4173-bd74-df3be0452759",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4269e839-8fcd-425c-869f-85beb5a36588",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DesactiverObjet",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
