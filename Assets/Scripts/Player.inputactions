@@ -1,0 +1,56 @@
+{
+    "name": "Player",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "257308e8-4e2c-406b-bdd7-b4c1ae471958",
+            "actions": [
+                {
+                    "name": "Bouger",
+                    "type": "Value",
+                    "id": "f5ea7bd2-5344-4c02-8247-ecc8f6b81d21",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Horizontal",
+                    "id": "20e432eb-5161-4037-8f24-d40586b98abf",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Left",
+                    "id": "6ee0bcc0-dc28-486b-857f-11119f94ad4e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "a7a37227-9f80-43fd-ae46-7f50a8d88147",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bouger",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
