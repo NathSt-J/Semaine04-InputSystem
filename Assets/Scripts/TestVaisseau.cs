@@ -14,16 +14,22 @@ public class TestVaisseau : MonoBehaviour
 
     private Rigidbody _rb;
 
+    //----------------------------------------------------------------
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
     }
+
+    //----------------------------------------------------------------
 
     // Update is called once per frame
     void Update()
     {
         Bouger();
     }
+
+    //----------------------------------------------------------------
 
     public void OnMove(InputValue value){
         Vector2 _valeurRecue = value.Get<Vector2>();
@@ -36,7 +42,19 @@ public class TestVaisseau : MonoBehaviour
         Debug.Log(_mouvementDroiteGauche);
     }
 
+    //----------------------------------------------------------------
+
     void Bouger(){
-        _rb.velocity = new Vector3(_valeurX, 0, _valeurY); //Pour la vélocité, on doit savoir dans quelle direction on va
+        _rb.velocity = new Vector3(_valeurX * 5, 0, _valeurY * 5); //Pour la vélocité, on doit savoir dans quelle direction on va
     }
+
+    //----------------------------------------------------------------
+
+    private void OnCollisionEnter(Collision other){
+        if(other.gameObject.CompareTag("CubePoints")){
+            Destroy(other.gameObject);
+        }
+    }
+
+    //----------------------------------------------------------------
 }
