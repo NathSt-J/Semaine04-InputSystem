@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 705906102}
   m_Layer: 0
   m_Name: Sol
-  m_TagString: Untagged
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53d494af55b77e488e929061ce786a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cubePrefab: {fileID: 2654919047479033292, guid: 0b6985248f3542b4fb3e4b7d0604f1cb,
+  _cubePrefab: {fileID: 1168833039194048727, guid: 4a121df508eb05345b65c90d9445315e,
     type: 3}
   _zoneSize: {x: 30, y: 35, z: 25}
 --- !u!4 &1132808345
