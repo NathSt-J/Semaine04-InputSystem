@@ -54,16 +54,15 @@ public class PlayerS5 : MonoBehaviour
     //----------------------------------------------------------------
 
     private void OnCollisionEnter(Collision other){
-        if(other.gameObject.CompareTag("CubePoints")){
+        if(other.gameObject.CompareTag("PortailPoints")){
+
+            _points = other.gameObject.GetComponent<PointPortail>()._points;
+
+            Debug.Log("J'ai: " + _points + " points! Wow! C'est incroyable les portails!");
             Destroy(other.gameObject);
-            _points++;
-
-            Debug.Log("J'ai: " + _points + " points! Wow! C'est incroyable les cubes!");
         }
 
-        if(other.gameObject.CompareTag("Kaboom")){
-            Destroy(gameObject); //Pas besoin de 'this' quand on veut détruire l'objet lui-même
-        }
+
     }
 
     //----------------------------------------------------------------

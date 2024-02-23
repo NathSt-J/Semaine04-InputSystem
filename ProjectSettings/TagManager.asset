@@ -9,6 +9,7 @@ TagManager:
   - CubePoints
   - Sol
   - Kaboom
+  - PortailPoints
   layers:
   - Default
   - TransparentFX
